@@ -3,25 +3,26 @@ const msql = require ('mysql2');
 
 //Creating MYSQL connection
 
-const connection = mysql.createConnection({
+const connection = msql.createConnection({
     host:"localhost",
     port:3306,
     user:'root',
     password:'Saraarev777',
-    database:'empoyeeTracker_db',
+    database:'employeeTracker_db',
 });
 
 //Connection to database
-connection.connect((err)=>{
-    if(err) throw err;
-    console.log('Connected to the database.');
-    start()
+connection.connect((err) => {
+    if (err) throw err;
+    // console.log("Connected to the database!");
+    // start the application
+    start();
 });
 
 //Function to start the application
 function start(){
     inquirer
-    .createPromptModule({
+    .prompt({
         type:'list',
         name:'action',
         message:"what would you like to do",
