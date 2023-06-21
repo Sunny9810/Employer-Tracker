@@ -39,13 +39,13 @@ function start(){
     })
     .then ((answer)=>{
         switch(answer.action){
-            case 'View all departmenst':
+            case 'View all departments':
                 viewAllDepartments();
                 break;
                 case 'View all roles':
                     viewAllRoles();
                     break;
-                    case 'View all employess':
+                    case 'View all employees':
                         viewAllEmployees();
                         break;
                         case "Add a department":
