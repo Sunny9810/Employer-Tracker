@@ -8,7 +8,7 @@ const connection = msql.createConnection({
     port:3306,
     user:'root',
     password:'Saraarev777',
-    database:'employeeTracker_db',
+    database:'employeetracker_db',
 });
 
 //Connection to database
