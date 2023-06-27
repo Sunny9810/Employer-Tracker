@@ -6,7 +6,7 @@ VALUES
 ('Marketing'),
 ('Customer Service'),
 ('IT'),
-('Legal'),
+('Legal');
 
 INSERT INTO roles (title,salary,department_id)
 VALUES
@@ -17,11 +17,11 @@ VALUES
 ('IT', 250000.00,5),
 ('Legal',350000.00,6);
 
-INSERT INTO employee (first_name,last_name,role_id,)
+INSERT INTO employee (first_name,last_name,role_id)
 VALUES
 ('Anush','Badalyan',1),
 ('Vazgen', 'Karapetyan',2),
 ('Jordan','Pedersen', 3),
-('Laura' 'Melikyan', 4),
-('Mariam Simityan', 5),
-('Lina Amiryan',6),
+('Laura','Melikyan', 4),
+('Mariam', 'Simityan', 5),
+('Lina', 'Amiryan',6);
